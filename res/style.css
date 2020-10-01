@@ -1,0 +1,108 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+}
+
+li{
+    font-family: Ubuntu, sans-serif;
+    padding: 0.5% 0%;
+}
+
+ul li::before{
+    color: #093426;
+}
+
+a{
+    color: inherit;
+}
+
+b{
+    color: #448D76;
+}
+
+body .left {
+    flex: 25%;
+    text-align: center;
+    background-color: #79BEA8;
+}
+
+body .right{
+    flex: 75%;
+}
+
+#address{
+    text-align: center;
+    line-height: 1.5;
+    font-weight: bolder;
+}
+
+#aboutMe{
+    padding: 0% 3%;
+}
+
+#project{
+    padding: 0% 2%;
+}
+
+#portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20%;
+    padding-left: 3%;
+}
+
+#portfolio img{
+    width: 32px;
+    height: 32px;
+}
+
+#portfolio .github, .codingame, .stackoverflow{
+    flex: 30%;
+}
+
+.profilePic{
+    height: 200px;
+    width: 200px;
+    border-radius: 50px;
+    padding: 3%;
+}
+
+.name{
+    text-align: center;
+    font-family: Sofia, Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #093426;
+}
+
+.city .email .phone {
+    color: #23483C;
+}
+
+.intro{
+    font-family: Ubuntu, sans-serif;
+    line-height: 1.5;
+}
+
+.topic{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    color: #093426;
+    margin: 3% 0%;
+}
+
+.projectName{
+    color:#23483C;
+    margin-bottom: 0%;
+    font-size: x-large;
+}
+
+.projectDescription {
+    font-size: large;
+}
+
+.timeline{
+    margin: 0% 0% 1% 0%;
+}
