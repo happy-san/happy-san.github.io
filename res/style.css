@@ -4,14 +4,22 @@ body{
     display: flex;
 }
 
+ul {
+    list-style: none;
+}
+
 li{
     font-family: Ubuntu, sans-serif;
     padding: 0.5% 0%;
 }
 
-ul li::before{
+ul li::before {
+    content: "\2765";
     color: #093426;
-}
+    font-weight: bolder;
+    margin-left: -1.5em;
+    padding: 0% 1%;
+  }
 
 a{
     color: inherit;
@@ -33,8 +41,14 @@ body .right{
 
 #address{
     text-align: center;
-    line-height: 1.5;
+    line-height: 0.1;
     font-weight: bolder;
+}
+
+#portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20%;
 }
 
 #aboutMe{
@@ -45,27 +59,28 @@ body .right{
     padding: 0% 2%;
 }
 
-#portfolio{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20%;
-    padding-left: 3%;
-}
-
-#portfolio img{
-    width: 32px;
-    height: 32px;
-}
-
 #portfolio .github, .codingame, .stackoverflow{
     flex: 30%;
 }
 
+#portfolio .codingame img:hover{
+    width: 34px;
+    height: 34px;
+}
+
+ a.textLinks:hover{
+    color: #79BEA8;
+}
+
+ a.iconLinks:hover{
+    color: #0000008a;
+}
+
 .profilePic{
-    height: 200px;
-    width: 200px;
-    border-radius: 50px;
-    padding: 3%;
+    height: 25%;
+    width: 100%;
+    max-width: 100%;
+    padding: 3% 0%;
 }
 
 .name{
