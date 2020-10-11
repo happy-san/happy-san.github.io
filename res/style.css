@@ -1,3 +1,15 @@
+a{
+    color: inherit;
+}
+
+a.textLinks:hover{
+    color: #79BEA8;
+}
+
+b{
+    color: #448D76;
+}
+
 body{
     margin: 0%;
     padding: 0%;
@@ -21,69 +33,24 @@ ul li::before {
     padding: 0% 1%;
   }
 
-a{
-    color: inherit;
-}
-
-b{
-    color: #448D76;
-}
-
-body .left {
+body .sideBar {
     flex: 25%;
     text-align: center;
     background-color: #79BEA8;
 }
 
-body .right{
+body .main{
     flex: 75%;
 }
 
-#address{
-    text-align: center;
-    line-height: 0.1;
-    font-weight: bolder;
-}
-
-#portfolio{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20%;
-}
-
-#aboutMe{
-    padding: 0% 3%;
-}
-
-#project{
-    padding: 0% 2%;
-}
-
-#portfolio .github, .codingame, .stackoverflow{
-    flex: 30%;
-}
-
-#portfolio .codingame img:hover{
-    width: 34px;
-    height: 34px;
-}
-
- a.textLinks:hover{
-    color: #79BEA8;
-}
-
- a.iconLinks:hover{
-    color: #0000008a;
-}
-
-.profilePic{
+.sideBar .profilePic{
     height: 25%;
     width: 100%;
     max-width: 100%;
     padding: 3% 0%;
 }
 
-.name{
+.sideBar .name{
     text-align: center;
     font-family: Sofia, Georgia, 'Times New Roman', Times, serif;
     font-size: xx-large;
@@ -91,16 +58,45 @@ body .right{
     color: #093426;
 }
 
-.city .email .phone {
-    color: #23483C;
+.sideBar .address{
+    text-align: center;
+    line-height: 0.1;
+    font-weight: bolder;
 }
 
-.intro{
-    font-family: Ubuntu, sans-serif;
-    line-height: 1.5;
+.sideBar .address p{
+    color: #093426;
 }
 
-.topic{
+.sideBar .portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20%;
+}
+
+.sideBar .portfolio .github, .codingame, .stackoverflow{
+    flex: 30%;
+}
+
+.sideBar .portfolio .github i, .stackoverflow i{
+    font-size: 36px;
+}
+
+.sideBar .portfolio .github i:hover, .stackoverflow i:hover{
+    font-size: 34px;
+}
+
+.sideBar .portfolio .codingame img{
+    width: 36px;
+    height: 36px;
+}
+
+.sideBar .portfolio .codingame img:hover{
+    width: 34px;
+    height: 34px;
+}
+
+.main .topic{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
@@ -108,16 +104,37 @@ body .right{
     margin: 3% 0%;
 }
 
-.projectName{
+.main #aboutMe{
+    padding: 0% 3%;
+}
+
+.main #aboutMe p{
+    font-family: Ubuntu, sans-serif;
+    line-height: 1.5;
+}
+
+.main #education{
+    padding: 0%;
+}
+
+.main #technologies{
+    padding: 0%;
+}
+
+.main #projects{
+    padding: 0% 2%;
+}
+
+.main #projects h3{
     color:#23483C;
     margin-bottom: 0%;
     font-size: x-large;
 }
 
-.projectDescription {
-    font-size: large;
+.main #projects h5{
+    margin: 0% 0% 1% 0%;
 }
 
-.timeline{
-    margin: 0% 0% 1% 0%;
+.main #projects p{
+    font-size: large;
 }

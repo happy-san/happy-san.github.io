@@ -9,31 +9,31 @@
 </head>
 
 <body>
-    <div class="left">
+    <div class="sideBar">
         <img src="res/img/octocat.png" class="profilePic">
 
         <h1 class="name">Harpreet Sangar</h1>
 
-        <div id="address">
-            <p class="city">Zirakpur, Punjab </p>
-            <p class="email">happy_san@protonmail.com</p>
-            <p class="phone">8556846465</p>
+        <div class="address">
+            <p>Zirakpur, Punjab </p>
+            <p>happy_san@protonmail.com</p>
+            <p>8556846465</p>
         </div>
 
-        <div id="portfolio">
-            <a href="http://github.com/happy-san" class="github iconLinks"><i class="fa fa-github"
-                    style="font-size:36px"></i></a>
-            <a href="https://www.codingame.com/profile/dd672f5d563cc4f2298bb0a54ae494973658193" class="codingame"><img
-                    src="res/img/codingame.png" width="36px" height="36px"></a>
-            <a href="https://stackoverflow.com/users/11218270/happy-san?tab=profile" class="stackoverflow iconLinks"><i
-                    class="fa fa-stack-overflow" style="font-size:36px"></i></a>
+        <div class="portfolio">
+            <div class="github"><a href="http://github.com/happy-san"><i class="fa fa-github"></i></a></div>
+            <div class="codingame"><a
+                    href="https://www.codingame.com/profile/dd672f5d563cc4f2298bb0a54ae494973658193"><img
+                        src="res/img/codingame.png"></a></div>
+            <div class="stackoverflow"><a href="https://stackoverflow.com/users/11218270/happy-san?tab=profile"><i
+                        class="fa fa-stack-overflow"></i></a></div>
         </div>
     </div>
 
-    <div class="right">
+    <div class="main">
         <div id="aboutMe">
             <h2 class="topic">-----About Me-----</h2>
-            <p class="intro">Hi There!<br>
+            <p>Hi There!<br>
                 I'm a fresher who is charmed by the advances of Computing Technologies in recent
                 decades
                 and
@@ -50,10 +50,8 @@
             </p>
         </div>
 
-
-        <h2 class="topic">-----Education-----</h2>
-
         <div id="education">
+            <h2 class="topic">-----Education-----</h2>
             <ul>
                 <li>
                     <b>Post Graduate Diploma in Computer Application</b><br>
@@ -70,33 +68,33 @@
             </ul>
         </div>
 
-
-        <h2 class="topic">-----Technology Summary-----</h2>
-
-        <ul>
-            <li>
-                <b>Languages/Frameworks:</b> C C++ Java Dart Flutter HTML Node.js
-            </li>
-            <li>
-                <b>Databases Management:</b> Mongo db
-            </li>
-            <li>
-                <b>IDE/Workflow Tools:</b> Android Studio Visual studio code Git
-            </li>
-            <li>
-                <b>Operating Systems:</b> Windows Linux
-            </li>
-        </ul>
-
-        <h2 class="topic">-----Projects-----</h2>
-        <div id="project">
-            <h3 class="projectName"><a href="https://github.com/happy-san/shoppingApp" class="textLinks">Shopping
-                    App</a></h3>
-            <h5 class="timeline">August 2020 – Present</h5>
-
-            <p class="projectDescription">A generic shopping app to learn fundamentals of Flutter.</p>
-            Implementation:
+        <div id="technologies">
+            <h2 class="topic">-----Technology Summary-----</h2>
             <ul>
+                <li>
+                    <b>Languages/Frameworks:</b> C C++ Java Dart Flutter HTML Node.js
+                </li>
+                <li>
+                    <b>Databases Management:</b> Mongo db
+                </li>
+                <li>
+                    <b>IDE/Workflow Tools:</b> Android Studio Visual studio code Git
+                </li>
+                <li>
+                    <b>Operating Systems:</b> Windows Linux
+                </li>
+            </ul>
+        </div>
+
+        <div id="projects">
+            <h2 class="topic">-----Projects-----</h2>
+            <h3><a href="https://github.com/happy-san/shoppingApp" class="textLinks">Shopping
+                    App</a></h3>
+            <h5>August 2020 – Present</h5>
+
+            <p>A generic shopping app to learn fundamentals of Flutter.<br>
+                Implementation:
+            <ul class="implementaionList">
                 <li>MVVM architecture.</li>
                 <li>Material components to make user-friendly UI.</li>
                 <li>Responsive design to enhance UX.</li>
@@ -105,25 +103,20 @@
                     placed
                     by the users, etc.</li>
             </ul>
-        </div>
+            </p>
 
-
-        <div id="project">
-            <h3 class="projectName"><a href="https://github.com/happy-san/chattingApp" class="textLinks">Chatting
+            <h3><a href="https://github.com/happy-san/chattingApp" class="textLinks">Chatting
                     App</a></h3>
-            <h5 class="timeline">August 2020 – Present</h5>
+            <h5>August 2020 – Present</h5>
 
-            <p class="projectDescription">A generic chatting app to learn fundamentals of Firebase and it's integration
-                in a Flutter App.</p>
-            Implementation:
-            <ul>
+            <p>A generic chatting app to learn fundamentals of Firebase and it's integration
+                in a Flutter App.<br>
+                Implementation:
+            <ul class="implementaionList">
                 <li>Firebase cloud messaging.</li>
                 <li>Firebase functions basics.</li>
             </ul>
+            </p>
         </div>
-
-
-
     </div>
-
 </body>
