@@ -11,9 +11,11 @@ b{
 }
 
 body{
+    height: 100vh;
     margin: 0%;
     padding: 0%;
     display: flex;
+    flex-direction: row;
 }
 
 ul {
@@ -41,10 +43,11 @@ body .sideBar {
 
 body .main{
     flex: 75%;
+    overflow-y: scroll;
 }
 
 .sideBar .profilePic{
-    height: 25%;
+    height: 55%;
     width: 100%;
     max-width: 100%;
     padding: 3% 0%;
